@@ -10,7 +10,6 @@ var remove = function(e){
 var change = function(e){
     //console.log(this);
     this.setAttribute("fill", "#88D498");
-    this.setAttribute("id", "once");
     e.stopPropagation();
     this.addEventListener('click', remove);
 }
@@ -28,7 +27,6 @@ var draw = function(e){
     c1.setAttribute("r", 10);
     c1.setAttribute("stroke", "#FFFFFF");
     c1.setAttribute("fill", "lightsteelblue");
-    c1.setAttribute("id", "circ");
     svg.appendChild(c1);
     c1.addEventListener('click', change);
 }
